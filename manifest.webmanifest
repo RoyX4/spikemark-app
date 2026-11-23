@@ -1,0 +1,14 @@
+{
+  "name": "Spikemark",
+  "short_name": "Spikemark",
+  "description": "Spacing charts, calling scripts and staging staffs for stage management.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#121316",
+  "theme_color": "#121316",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

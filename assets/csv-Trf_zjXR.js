@@ -1,0 +1,3 @@
+var e=/^[=+\-@\t\r]/,t=/^[-+]?\d+(\.\d+)?$/,n=/[",\r\n]|^\s|\s$/;function r(r){if(r==null)return``;let i=String(r);return typeof r!=`number`&&e.test(i)&&!t.test(i)&&(i=`'${i}`),n.test(i)?`"${i.replace(/"/g,`""`)}"`:i}function i(e,t){return[e,...t].map(e=>e.map(r).join(`,`)).join(`\r
+`)+`\r
+`}function a(e,t=`report`){return e.normalize(`NFKD`).replace(/[^\w\-. ]+/g,``).trim().replace(/\s+/g,`-`).replace(/\.{2,}/g,`.`).replace(/[-.]*-[-.]*/g,`-`).replace(/^[.-]+|[.-]+$/g,``).slice(0,60)||t}export{i as n,a as t};
