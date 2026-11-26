@@ -1,0 +1,1 @@
+import{r as e}from"./rolldown-runtime-XKyaHtl9.js";import{t}from"./react-BdmHECUP.js";var n=e(t(),1);function r(e){let[t,r]=(0,n.useState)(()=>Date.now());return(0,n.useEffect)(()=>{let t=setInterval(()=>r(Date.now()),e);return()=>clearInterval(t)},[e]),t}export{r as t};
